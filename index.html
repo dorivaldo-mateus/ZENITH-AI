@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="zenith.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>ZENITH</title>
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <h3 id="perfil"></h3>
+      <a href="./log_in.html">
+        <button id="criarConta">
+        Criar Conta
+         <span></span>
+         <span>ZENITH</span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
+
+    </a>
+    </header>
+
+    <div id="particles-js"></div>
+  <img src="zenith.png" alt="Zenith" />
+  <h2>ZENITH</h2>
+  <h3>Professor Pessoal De IA</h3>
+
+  <p id="texto"></p>
+
+  <div class="cta-group">
+    <div class="cta-row">
+      <a href="aula.html"><button class="btn btn-secondary">CRIAR AULA</button></a>
+      <a href="chat.html"><button class="btn btn-primary">CONVERSE</button></a>
+    </div>
+    
+    <a href="mentor.html" class="cta-full">
+      <button class="btn btn-hero">CRIAR PLANO DE CRESCIMENTO</button>
+    </a>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="module">
+
+  const frase = "Aprenda qualquer disciplina com explicações claras e personalizadas com a ZENITH";
+  const elemento = document.getElementById("texto");
+let i = 0;
+
+function digitar() {
+    if (i < frase.length) {
+        elemento.textContent += frase.charAt(i);
+        i++;
+        setTimeout(digitar, 40);
+    }
+}
+digitar();
+
+
+  
+  particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 400
+    },
+
+    color: {
+      value: "#5c82ff"
+    },
+
+    shape: {
+      type: "circle"
+    },
+
+    opacity: {
+      value: 0.4
+    },
+
+    size: {
+      value: 2
+    },
+
+    move: {
+      enable: true,
+      speed: 1        
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#700e88",
+      opacity: 0.2,
+      width: 1
+    }
+  },
+
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab"
+      }
+    }
+  }
+ });
+</script>
+</html>

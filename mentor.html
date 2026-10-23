@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mentor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <div class="icons-links">
+      <ul>
+      <a id="hom" href="./index.html">
+        <li><i class="fa-solid fa-house"></i></li>
+      </a>
+      <a id="msg" href="./chat.html">
+        <li><i class="fa-solid fa-message"></i></li>
+      </a>
+      <a id="anl" href="./aula.html">
+        <li><i class="fa-solid fa-book"></i></li>
+      </a>
+    </ul>
+    </div>
+    <div class="apresentacao">
+      <h3>ZENITH MENTOR</h3>
+      <p>Diagnóstico académico inteligente.<br>Plano de evolução personalizado.</p>
+    </div>
+<div class="orbital-bg">
+  <div class="orbit orbit1"></div>
+  <div class="orbit orbit2"></div>
+  <div class="orbit orbit3"></div>
+  <div class="orbit orbit4"></div>
+  <div class="orbit orbit5"></div>
+  <div class="orbit orbit6"></div>
+</div>
+
+    <div class="dadosDoUsuario">
+      <h2>INSIRA SEUS DADOS</h2>
+      <input type="text" id="nome" placeholder="NOME" required>
+      <input type="text" id="classe" placeholder="CLASSE" required>
+      <input type="text" id="curso" placeholder="CURSO" required>
+      <input type="text" id="objetivo" placeholder="OBJETIVO (opcional)">
+    </div>
+     <div id="disciplinas"></div>
+    <button id="addSubjects">+ Adicionar Disciplinas</button>
+    <div class="perfil">
+      <label for="p1">Quando estudas aprendes mas esqueces rápidos</label>
+      <select id="p1">
+        <option value="Baixa Retenção">SIM</option>
+        <option value="Alta Retenção">NÂO</option>
+      </select>
+
+      <label for="p2">Costumas relacionar novos conteúdos com conhecimentos que já possuis para entendê-los melhor?</label>
+      <select id="p2">
+        <option value="aprendizagem associativa e pensamento analítico.">SIM</option>
+        <option value="pode aprender de forma mais direta ou memorística.">NÂO</option>
+      </select>
+
+      <label for="p3">Quando encontras um problema difícil, tentas resolvê-lo sozinho antes de procurar ajuda?</label>
+      <select id="p3">
+        <option value="maior autonomia e persistência.">SIM</option>
+        <option value="tende a preferir orientação ou aprendizagem colaborativa">NÂO</option>
+      </select>
+
+      <label for="p4">Quando aprendes algo novo entendes melhor vendo imagens, ouvindo explicações ou praticando?</label>
+      <select id="p4">
+        <option value="Tendencia Visual">Imagens</option>
+        <option value="Tendencia Auditiva">Audio</option>
+        <option value="Tendencia Cinestésica">Praticando</option>
+      </select>
+
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <button class="enviar">Analisar</button>
+      <button id="limparBtn" class="enviar" style="background: transparent; border: 1px solid #4F46E5;">Limpar</button>
+    </div>
+    <p id="status"></p>
+    <div class="answer"></div>
+
+    <div id="dashboard">
+      <div id="stats"></div>
+      <div id="grafico">
+        <div class="bars"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="mentor.js"></script>
+</body>
+</html>

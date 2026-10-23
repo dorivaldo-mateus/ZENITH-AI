@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="chat.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <title></title>
+</head>
+  
+<body>
+  <header>
+    <button class="ham">&#x2630;</button>
+   <div class="in_line">
+     <button id="novaConversa" class="btn"><i class="fa-regular fa-message"></i></button>
+   </div>
+  </header>
+   <div class="menu">
+    <hr>
+    <div class="menu_details">
+      <div class="atalhos">
+    <ul>
+      <a href="./index.html">
+        <li>HOME</li>
+      </a><a href="./aula.html">
+        <li>CRIAR AULA</li>
+      </a><a href="./mentor.html">
+        <li>ANALISTA</li>
+      </a>
+    </ul>
+  </div>
+  <hr>
+      <button class="btn mode"><i class="fas fa-circle-half-stroke"></i></button>
+    </div>
+    <span id="line"></span>
+     <div class="chatMemory"></div> 
+   </div>
+   
+  <div class="show">
+  <h4>
+      Bem-Vindo a <strong>ZENITH</strong><br>
+    Inteligência aplicada ao teu crescimento académico.
+  </h4>
+</div>
+  <div id="chat">
+  </div>
+
+  <div id="loading" class="loading hidden">
+  <span id="dots">.</span>
+</div>
+  <div class="container">
+   <input type="text" id="mensagem" placeholder="O que vamos aprender hoje?">
+   <button id="enviar" class="fa fa-arrow-right"></button>
+  </div>
+  
+</body>
+<script type="module" src="chat.js" ></script>
+</html>

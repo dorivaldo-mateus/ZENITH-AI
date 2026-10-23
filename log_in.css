@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+.container{
+    height: 100vh;
+    background-color: #020617;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.back{
+  width: 100%;
+  padding: 30px 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back i{
+  color: #7c3aed;
+  z-index: 9;
+  font-size: 22px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+    max-width: 300px;
+    background-color: #f0ecec;
+    padding: 12px 22px;
+    border-radius: 18px;
+    color: #020617;
+    z-index: 2;
+}
+
+form h4{
+    align-self: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+form h4 strong{
+    background-image: linear-gradient(90deg, #01091d, #7c3aed);
+    background-clip: text;
+    color: transparent;
+}
+
+form input{
+    padding: 6px 8px;
+    background-color: #020617;
+    border: 1px solid #020617;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    color: #f0ecec
+}
+form label{
+    letter-spacing: 1.2px;
+}
+form button{
+    background-color:#020617 ;
+    color: #ccc;
+    padding: 8px 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+form code{
+    width: 100%;
+    font-size: 18px;
+    justify-self: center;
+    color: #012;
+}
+
+form code a span{
+    font-weight: 600;
+    color: #012;
+    
+}
