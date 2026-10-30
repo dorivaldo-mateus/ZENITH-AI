@@ -150,7 +150,7 @@ async function chat() {
   input.value = "";
   input.focus(); 
   
-  chatBox.innerHTML += `<p class="chatUser">${sanitizar(mensagem)}</p>`;
+  chatBox.innerHTML += `<div class="user"><i class="fa-regular fa-user"></i><p class="chatUser">${sanitizar(mensagem)}</p></div>`;
   chatBox.scrollTop = chatBox.scrollHeight;
   startLoading();
 
@@ -158,7 +158,7 @@ async function chat() {
     const resposta = await perguntarIa(historico);
     historico.push({ role: "assistant", content: resposta });
     
-    chatBox.innerHTML += `<p class="chatSystem">${sanitizar(resposta)}</p> <div class="acoes-resultado">
+    chatBox.innerHTML += `<div class="system"><i class="fa-solid fa-robot"></i><p class="chatSystem">${sanitizar(resposta)}</p></div> <div class="acoes-resultado">
       <button class="btn-acao btn-copy-main" id="btnCopiar">
         <i class="fa-regular fa-copy"></i> Copiar
       </button>
