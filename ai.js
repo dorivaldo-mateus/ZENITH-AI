@@ -1,4 +1,4 @@
-require ("dotenv").config()
+require("dotenv").config()
 dotenv.config()
 const SYSTEM_PROMPT = {
   role: 'system',
